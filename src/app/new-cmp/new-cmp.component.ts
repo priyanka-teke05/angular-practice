@@ -14,8 +14,7 @@ export class NewCmpComponent implements OnInit {
   isAvailable=true;
 
   myClickFunction(event) {
-    alert("Button is clicked")
-    console.log(event);
+    this.isAvailable = !this.isAvailable;
   }
 
   changeMonths(event) {
