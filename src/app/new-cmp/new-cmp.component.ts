@@ -19,7 +19,7 @@ export class NewCmpComponent implements OnInit {
   }
 
   changeMonths(event) {
-    console.log("Changed month from the dropdown");
+    alert("Changed month from the dropdown");
     console.log(event);
   }
 

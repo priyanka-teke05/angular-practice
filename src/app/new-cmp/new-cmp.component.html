@@ -12,8 +12,8 @@
      </div>
      <div>
          <span *ngIf = "isAvailable; then condition1 else condition2"></span>
-         <ng-template #condition1>Condition is valid</ng-template>
-         <ng-template #condition2>Condition is invalid</ng-template>
+         <ng-template #condition1>Condition is valid from template</ng-template>
+         <ng-template #condition2>Condition is invalid from template</ng-template>
      </div>
      <button (click) = "myClickFunction($event)">
         Click Me
