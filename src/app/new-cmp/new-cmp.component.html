@@ -10,7 +10,6 @@
     </select>
      </div>
      <div>
-         <span *ngIf = "isAvailable">Condition is valid</span>
-         //over here based on if condition the text condition is valid is displayed. 
-         //If the value of isavailable is set to false it will not display the text.
-        </div>
+         <span *ngIf = "isAvailable; else condition1">Condition is valid</span>
+         <ng-template #condition1>Condition is invalid</ng-template>
+     </div>
