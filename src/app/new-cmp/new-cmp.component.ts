@@ -18,6 +18,11 @@ export class NewCmpComponent implements OnInit {
     console.log(event);
   }
 
+  changeMonths(event) {
+    console.log("Changed month from the dropdown");
+    console.log(event);
+  }
+
   constructor() { }
   ngOnInit(): void {
   }
