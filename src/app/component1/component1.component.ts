@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{greetUser()}}</h2>
               <input [id]="myId" type="text" value="Priyanka">
               <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="Priyanka">
-              <h2 class="text-success"> class binding</h2>
+              <h2 [class]="successClass"> class binding</h2>
               `,
   styles: [`
   .text-success {
@@ -34,6 +34,7 @@ import { Component, OnInit } from '@angular/core';
 export class Component1Component implements OnInit {
   public name="Priyanka";
   public myId ="testId";
+  public successClass="text-success";
 
   //create property and then bind
   public isDisabled = false;
