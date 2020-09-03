@@ -13,9 +13,12 @@ export class NewCmpComponent implements OnInit {
 
   isAvailable=true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  myClickFunction(event) {
+    alert("Button is clicked")
+    console.log(event);
   }
 
+  constructor() { }
+  ngOnInit(): void {
+  }
 }
