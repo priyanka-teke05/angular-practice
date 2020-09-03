@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{name.toUpperCase()}}</h2>
               <h2>{{greetUser()}}</h2>
               <input [id]="myId" type="text" value="Priyanka">
-              <input id="{{myId}}" type="text" value="Priyanka">
+              <input disabled="false" id="{{myId}}" type="text" value="Priyanka">
               `,
   styleUrls: ['./component1.component.css']
 })
