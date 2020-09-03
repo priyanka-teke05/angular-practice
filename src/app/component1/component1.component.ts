@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 
   selector: '[app-component1]',
 
-  template: `<h2>Welcome {{name}}</h2>`,
+  template: `<h2>
+              Welcome {{name}}
+              </h2>
+              <h2>{{2*2}}</h2>
+              <h2>{{"Welcome" + name}}</h2>`,
   styleUrls: ['./component1.component.css']
 })
 export class Component1Component implements OnInit {
