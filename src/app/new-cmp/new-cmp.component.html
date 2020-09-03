@@ -1,0 +1,16 @@
+<p>new-cmp works!</p>
+<p>
+    {{newComponent}}
+</p>
+
+<div>Months:
+    <select>
+        <option *ngFor = "let i of months">{{i}}
+        </option>
+    </select>
+     </div>
+     <div>
+         <span *ngIf = "isAvailable">Condition is valid</span>
+         //over here based on if condition the text condition is valid is displayed. 
+         //If the value of isavailable is set to false it will not display the text.
+        </div>

@@ -19,6 +19,7 @@ import { Component, OnInit } from '@angular/core';
               <input [id]="myId" type="text" value="Priyanka">
               <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="Priyanka">
               <h2 [class]="successClass"> class binding</h2>
+              <h2 [class.text-danger]="hasError"> class binding</h2>
               `,
   styles: [`
   .text-success {
@@ -35,7 +36,7 @@ export class Component1Component implements OnInit {
   public name="Priyanka";
   public myId ="testId";
   public successClass="text-success";
-
+  public hasError=true;
   //create property and then bind
   public isDisabled = false;
 
