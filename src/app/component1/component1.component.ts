@@ -18,8 +18,18 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{greetUser()}}</h2>
               <input [id]="myId" type="text" value="Priyanka">
               <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="Priyanka">
+              <h2 class="text-success"> class binding</h2>
               `,
-  styleUrls: ['./component1.component.css']
+  styles: [`
+  .text-success {
+    color: green;
+  }
+  .text-danger {
+    color: red;
+  }
+  .text-special {
+    font-style: italic;
+  }`]
 })
 export class Component1Component implements OnInit {
   public name="Priyanka";
