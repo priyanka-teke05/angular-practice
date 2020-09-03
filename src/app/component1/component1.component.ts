@@ -11,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
               Welcome {{name}}
               </h2>
               <h2>{{2*2}}</h2>
-              <h2>{{"Welcome" + name}}</h2>`,
+
+              <h2>{{"Welcome" + name}}</h2>
+              <h2>{{name.length}}</h2>
+              <h2>{{name.toUpperCase()}}</h2>
+              `,
   styleUrls: ['./component1.component.css']
 })
 export class Component1Component implements OnInit {
