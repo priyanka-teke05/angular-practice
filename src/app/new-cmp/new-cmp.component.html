@@ -10,6 +10,7 @@
     </select>
      </div>
      <div>
-         <span *ngIf = "isAvailable; else condition1">Condition is valid</span>
-         <ng-template #condition1>Condition is invalid</ng-template>
+         <span *ngIf = "isAvailable; then condition1 else condition2"></span>
+         <ng-template #condition1>Condition is valid</ng-template>
+         <ng-template #condition2>Condition is invalid</ng-template>
      </div>
