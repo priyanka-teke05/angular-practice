@@ -16,6 +16,7 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{name.length}}</h2>
               <h2>{{name.toUpperCase()}}</h2>
               <h2>{{greetUser()}}</h2>
+              <h2>{{a=2+2}}</h2>
               `,
   styleUrls: ['./component1.component.css']
 })
