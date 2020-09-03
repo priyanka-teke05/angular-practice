@@ -15,6 +15,7 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{"Welcome" + name}}</h2>
               <h2>{{name.length}}</h2>
               <h2>{{name.toUpperCase()}}</h2>
+              <h2>{{greetUser()}}</h2>
               `,
   styleUrls: ['./component1.component.css']
 })
@@ -23,6 +24,10 @@ export class Component1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  greetUser() {
+    return "Hello " +this.name;
   }
 
 }
