@@ -16,12 +16,15 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{name.length}}</h2>
               <h2>{{name.toUpperCase()}}</h2>
               <h2>{{greetUser()}}</h2>
-              <h2>{{a=2+2}}</h2>
+              <input [id]="myId" type="text" value="Priyanka">
+              <input id="{{myId}}" type="text" value="Priyanka">
               `,
   styleUrls: ['./component1.component.css']
 })
 export class Component1Component implements OnInit {
   public name="Priyanka";
+  public myId ="testId";
+  
   constructor() { }
 
   ngOnInit(): void {
