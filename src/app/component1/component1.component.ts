@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
               <h2>{{name.toUpperCase()}}</h2>
               <h2>{{greetUser()}}</h2>
               <input [id]="myId" type="text" value="Priyanka">
-              <input [disabled]="isDisabled" id="{{myId}}" type="text" value="Priyanka">
+              <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="Priyanka">
               `,
   styleUrls: ['./component1.component.css']
 })
@@ -26,7 +26,7 @@ export class Component1Component implements OnInit {
   public myId ="testId";
 
   //create property and then bind
-  public isDisabled = true;
+  public isDisabled = false;
 
   
   constructor() { }
