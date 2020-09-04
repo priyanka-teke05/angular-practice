@@ -7,4 +7,27 @@
     <span appChangeText>
         welcome to {{title}}
     </span></div>
+
+    <h3>Uppercase pipes</h3>
+    <b>{{title | uppercase}}</b>
+
+    <h3>lowercase pipes</h3>
+    <b>{{title | lowercase}}</b>
+
+    <h3>Currency Pipes</h3>
+    <b>{{654.45 | currency:"USD"}}</b>
+
+    <h3>Currency Pipes</h3>
+    <b>{{654.45 | currency:"USD":true}}</b>
+
+    <h3>Date pipe</h3>
+    <b>{{todayDate | date:'d/M/y'}}</b>
+
+    <h3>Date pipe</h3>
+    <b>{{todayDate | date:'shortTime'}}</b>
+
+    <h3>json pipe</h3>
+    <b>{{information | json}}</b>
+    
+    
     <router-outlet></router-outlet>

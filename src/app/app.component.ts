@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Team';
+  todayDate= new Date();
+  information = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}}; 
 }
