@@ -19,8 +19,7 @@ export class MycustompipePipe implements PipeTransform {
     if(args === 'false') {
       return '{{' + value + '}}'
     }
-
-    return value;
+        return value;
   }
 
 }

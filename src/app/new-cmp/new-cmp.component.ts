@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-new-cmp',
   templateUrl: './new-cmp.component.html',
-  styleUrls: ['./new-cmp.component.css']
+  styleUrls: ['./new-cmp.component.css'],
+  providers: [ UpperCasePipe]
 })
 export class NewCmpComponent implements OnInit {
 
@@ -23,7 +25,8 @@ export class NewCmpComponent implements OnInit {
     console.log(event);
   }
 
-  constructor() { }
+  constructor(private upperCasePipe: UpperCasePipe) { }
+  uppercase=this.upperCasePipe.transform('angularpipes Uppercasepipe');
   ngOnInit(): void {
   }
 }
