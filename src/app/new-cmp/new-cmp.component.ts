@@ -12,6 +12,7 @@ export class NewCmpComponent implements OnInit {
   "August", "September", "October", "November", "December"];
 
   isAvailable=true;
+  num: number= 0;
 
   myClickFunction(event) {
     this.isAvailable = !this.isAvailable;

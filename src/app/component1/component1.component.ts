@@ -45,9 +45,7 @@ export class Component1Component implements OnInit {
 
   ngOnInit(): void {
   }
-
   greetUser() {
     return "Hello " +this.name;
   }
-
 }
