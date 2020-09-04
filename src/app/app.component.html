@@ -32,4 +32,11 @@
     <h3>Custom pipe mycustompipe</h3>
     <p>{{'this is testing string' | mycustompipe:'true'}}</p>
     <p>{{'this is testing string' | mycustompipe:'false'}}</p>
+
+    
+
+    <h2>Two-way Binding Example</h2>   
+    <input [(ngModel)]="fullName" /> <br/><br/>   
+    <p> {{fullName}} </p>
+
     <router-outlet></router-outlet>
