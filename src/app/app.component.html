@@ -29,5 +29,7 @@
     <h3>json pipe</h3>
     <b>{{information | json}}</b>
     
-    
+    <h3>Custom pipe mycustompipe</h3>
+    <p>{{'this is testing string' | mycustompipe:'true'}}</p>
+    <p>{{'this is testing string' | mycustompipe:'false'}}</p>
     <router-outlet></router-outlet>

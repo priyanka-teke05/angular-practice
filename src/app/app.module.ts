@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { Component1Component } from './component1/component1.component';
 import { NewCmpComponent } from './new-cmp/new-cmp.component';
 import { ChangeTextDirective } from './change-text.directive';
+import { MycustompipePipe } from './mycustompipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     Component1Component,
     NewCmpComponent,
-    ChangeTextDirective
+    ChangeTextDirective,
+    MycustompipePipe
   ],
   imports: [
     BrowserModule,
