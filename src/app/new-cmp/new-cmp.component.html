@@ -4,34 +4,38 @@
 </p>
 
 <div>Months:
-    <select (change) = "changeMonths($event)">
-        
-        <option *ngFor = "let i of months">{{i}}
+    <select (change)="changeMonths($event)">
+
+        <option *ngFor="let i of months">{{i}}
         </option>
     </select>
-     </div>
-     <div>
-         <span *ngIf = "isAvailable; then condition1 else condition2"></span>
-         <ng-template #condition1>Condition is valid from template</ng-template>
-         <ng-template #condition2>Condition is invalid from template</ng-template>
-     </div>
-     <button (click) = "myClickFunction($event)">
-        Click Me
-     </button>
+</div>
+<div>
+    <span *ngIf="isAvailable; then condition1 else condition2"></span>
+    <ng-template #condition1>Condition is valid from template</ng-template>
+    <ng-template #condition2>Condition is invalid from template</ng-template>
+</div>
+<button (click)="myClickFunction($event)">
+    Click Me
+</button>
 
-     <h3>slice pipe</h3>
-    <b>{{months | slice:2:6}}</b>
+<h3>slice pipe</h3>
+<b>{{months | slice:2:6}}</b>
 
-    <h3>keyvalue pipe</h3>
-    <div *ngFor="let item of months | keyvalue">
-        Key: <b>{{item.key}}</b> and Value: <b>{{item.value}}</b>
-    </div>
+<h3>keyvalue pipe</h3>
+<div *ngFor="let item of months | keyvalue">
+    Key: <b>{{item.key}}</b> and Value: <b>{{item.value}}</b>
+</div>
 
-    <h3>uppercase pipe in component</h3>
-    <b>{{uppercase}}</b>
+<h3>uppercase pipe in component</h3>
+<b>{{uppercase}}</b>
 
-    <h3>decimal pipe in component with parameter</h3>
-    <b>{{decimal}}</b>
+<h3>decimal pipe in component with parameter</h3>
+<b>{{decimal}}</b>
 
-     <!-- <b>{{months | key}}</b> -->
-    
+<!-- accept user name display to user(two way data binding) -->
+<p>pipe -chaining</p>
+    <p>{{pipeChain | slice:0:6 | uppercase}}</p>
+  
+
+<!-- <b>{{months | key}}</b> -->

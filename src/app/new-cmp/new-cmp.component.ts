@@ -28,7 +28,7 @@ export class NewCmpComponent implements OnInit {
   constructor(private upperCasePipe: UpperCasePipe, private decimalPipe: DecimalPipe) { }
   uppercase=this.upperCasePipe.transform('angularpipes Uppercasepipe');
   decimal=this.decimalPipe.transform('1323.45','3.2-2','en');
-
+  pipeChain="Chain"  
   ngOnInit(): void {
   }
 }
