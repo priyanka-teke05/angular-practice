@@ -12,6 +12,7 @@ import { MycustompipePipe } from './mycustompipe.pipe';
 import { EmployeeNameComponent } from './employee-name/employee-name.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeServiceService } from './employee-service.service'
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { EmployeeServiceService } from './employee-service.service'
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
