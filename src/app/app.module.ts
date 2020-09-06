@@ -11,6 +11,7 @@ import { ChangeTextDirective } from './change-text.directive';
 import { MycustompipePipe } from './mycustompipe.pipe';
 import { EmployeeNameComponent } from './employee-name/employee-name.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeServiceService } from './employee-service.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
