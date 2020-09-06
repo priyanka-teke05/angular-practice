@@ -10,6 +10,7 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 import { ChangeTextDirective } from './change-text.directive';
 import { MycustompipePipe } from './mycustompipe.pipe';
 import { EmployeeNameComponent } from './employee-name/employee-name.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { EmployeeNameComponent } from './employee-name/employee-name.component';
     NewCmpComponent,
     ChangeTextDirective,
     MycustompipePipe,
-    EmployeeNameComponent
+    EmployeeNameComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
