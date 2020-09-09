@@ -40,4 +40,14 @@
     <p> {{fullName}} </p>
     <app-employee-name></app-employee-name>
     <app-employee-details></app-employee-details>
+
+    <!-- Reactive form -->
+    <label>Name :
+        <input type="text" [formControl]="name">
+    </label>
+
+    <p>
+        Value: {{name.value}}
+    </p>
+
     <router-outlet></router-outlet>

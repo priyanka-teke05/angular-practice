@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Cars} from './cars'
+import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +12,7 @@ export class AppComponent {
   information = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}}; 
 
   fullName: string = "Priyanka Teke";
+
+ 
+  name= new FormControl('');
 }
