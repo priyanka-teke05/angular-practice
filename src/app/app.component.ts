@@ -12,7 +12,15 @@ export class AppComponent {
   information = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}}; 
 
   fullName: string = "Priyanka Teke";
-
- 
+  
   name= new FormControl('');
+
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl('')
+  })
+ 
+  onSubmit() {
+    console.warn(this.profileForm.value);
+  }
 }
