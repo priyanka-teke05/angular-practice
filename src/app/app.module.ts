@@ -14,6 +14,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeServiceService } from './employee-service.service'
 import { HttpClientModule } from '@angular/common/http';
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
+import { OrderViewComponent } from './order-view/order-view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@a
     ChangeTextDirective,
     MycustompipePipe,
     EmployeeNameComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    OrderViewComponent
   ],
   imports: [
     BrowserModule,
