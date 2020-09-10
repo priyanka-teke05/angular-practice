@@ -13,6 +13,7 @@ import { EmployeeNameComponent } from './employee-name/employee-name.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeServiceService } from './employee-service.service'
 import { HttpClientModule } from '@angular/common/http';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [EmployeeServiceService],
+  providers: [EmployeeServiceService, { provide: LocationStrategy,useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

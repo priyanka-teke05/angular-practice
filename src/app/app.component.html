@@ -67,4 +67,40 @@
 
     </form>
 
+    <!-- Reactive form using formBuilder -->
+    <form [formGroup]="profileFormWithAddress" (ngSubmit)="profileAddressSubmit()">
+        <label>
+            First Name:
+            <input type="text" formControlName="firstName" required>
+        </label>
+
+        <label>
+            Last Name: 
+            <input type="text" formControlName="lastName">
+        </label>
+
+        <label>
+            Address:Street: 
+            <input type="text" formControlName="street">
+        </label>
+
+        <label>
+            city: 
+            <input type="text" formControlName="city">
+        </label>
+
+        <label>
+            state: 
+            <input type="text" formControlName="state">
+        </label>
+
+        <label>
+            zip: 
+            <input type="text" formControlName="zip">
+        </label>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </form>
+    <p>
+        Form Status: {{ profileForm.status }}
+      </p>
     <router-outlet></router-outlet>
