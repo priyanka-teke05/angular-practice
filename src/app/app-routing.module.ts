@@ -7,7 +7,7 @@ import { OrderViewComponent } from './order-view/order-view.component'
 const routes: Routes = [
   { path: 'employee-name', component: EmployeeNameComponent },
   { path: 'employee-details', component: EmployeeDetailsComponent },
-  { path: 'order-view/:id', component: OrderViewComponent }
+  { path: 'order-view/:id1/:id2', component: OrderViewComponent }
 ];
 
 @NgModule({

@@ -8,11 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class OrderViewComponent implements OnInit {
 
-  paramQuery = '';  
-
+  paramQuery1 = '';
+  paramQuery2 = '';
+    
   constructor( private activatedRoute: ActivatedRoute) { 
     this.activatedRoute.params.subscribe(data =>{
-      this.paramQuery = data.id;
+      this.paramQuery1 = data.id1;
+      this.paramQuery2 = data.id2;
     })
   }
 
